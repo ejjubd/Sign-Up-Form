@@ -2,11 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  
 }
 
-:root{
-
+body{
+    background-color: rgb(204, 196, 185); ;
 }
+
 
 .main-container{
     display: flex;
@@ -17,6 +19,7 @@
     height: 100vh;
     width: 35vw;
     display: flex;
+    
 }
 img{
     height: 100vh;
@@ -43,36 +46,46 @@ img{
   
 }
 
-.first-part{
-   
-    height: 35vh;
+.background-part{
+    display: flex;
+    height: 100vh;
     width: 100vw;
     background-color: rgb(204, 196, 185);
-    display: flex;
     flex-direction: column;
-    gap: 20px;
-    justify-content: flex-end;
-    padding: 30px 30px;
+    gap: 250px;
+  
 }
 
+.upper-background-part{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+    margin-top: 60px;
+}
+.bottom-background-part{
+   padding-left: 30px;
+
+}
 .first-paragraph, .second-paragraph {
     font-size: 20px;
     
 }
 
-.second-part{
-    border: 1px solid purple;
+.form-part{
+    background-color: aliceblue;
     height: 30vh;
     width: 100vw;
+    -webkit-box-shadow: 0 10px 5px #888888;
+    -moz-box-shadow: 0 10px 5px #888888;
+    box-shadow: 0 10px 5px #888888;
+    position: absolute;
+    top: 40%;
+
+ 
 }
 
-.third-part{
-    
-    height: 35vh;
-    width: 100vw;
-    padding: 30px;
-    background-color: rgb(204, 196, 185);
-}
+
 
 .create-account{
     padding: 8px 38px;
@@ -89,4 +102,13 @@ a{
     text-decoration: none;
     color: rgb(22, 148, 54);
     
+}
+
+.form-grid{
+    
+}
+
+#first-and-last-name{
+    display: flex;
+    gap: 70px;
 }
