@@ -6,7 +6,8 @@
 }
 
 body{
-    background-color: rgb(204, 196, 185); ;
+    background-color: rgb(204, 196, 185); 
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
 }
 
 
@@ -16,6 +17,7 @@ body{
 
 
 .left-image{
+    position: relative;
     height: 100vh;
     width: 35vw;
     display: flex;
@@ -23,14 +25,14 @@ body{
 }
 img{
     height: 100vh;
-    width: 35vw;
+    width: 100%;
 }
 
 .logo{
    height: 15vh;
    background-color: black;
    opacity: 0.5;
-   width: 35vw;
+   width: 100%;
    position: absolute;
     top: 20%;
     display: flex;
@@ -47,13 +49,13 @@ img{
 }
 
 .background-part{
+    position: relative;
     display: flex;
     height: 100vh;
-    width: 100vw;
-    background-color: rgb(204, 196, 185);
-    flex-direction: column;
-    gap: 250px;
-  
+    background-color: rgb(70, 99, 153);
+    flex-direction: column; 
+    width: 65vw; 
+    color: white;
 }
 
 .upper-background-part{
@@ -62,26 +64,27 @@ img{
     gap: 30px;
     padding: 30px;
     margin-top: 60px;
+    font-size: 20px;
+    width: 80%;
 }
 .bottom-background-part{
    padding-left: 30px;
+   margin-top: 40px;
+}
 
-}
-.first-paragraph, .second-paragraph {
-    font-size: 20px;
-    
-}
 
 .form-part{
     background-color: aliceblue;
-    height: 30vh;
-    width: 100vw;
-    -webkit-box-shadow: 0 10px 5px #888888;
-    -moz-box-shadow: 0 10px 5px #888888;
-    box-shadow: 0 10px 5px #888888;
-    position: absolute;
-    top: 40%;
-
+    width: 100%;
+    -webkit-box-shadow: 0 10px 5px #01000a;
+    -moz-box-shadow: 0 10px 5px #000008;
+    box-shadow: 0 10px 5px #01000e;
+    padding-left:30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding:15px 0 25px 30px ;
+    color: black;
  
 }
 
@@ -105,10 +108,22 @@ a{
 }
 
 .form-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     
 }
 
-#first-and-last-name{
+form{
     display: flex;
-    gap: 70px;
+    flex-direction: column;
+    width: 30%;
+    
+}
+
+
+.forms{
+    display: flex;
+    gap: 90px;
+    font-size: 11px;
 }
