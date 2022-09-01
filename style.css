@@ -8,11 +8,14 @@
 body{
     background-color: rgb(204, 196, 185); 
     font-family: 'Alumni Sans Pinstripe', sans-serif;
+    
 }
 
 
 .main-container{
     display: flex;
+   
+    
 }
 
 
@@ -34,28 +37,29 @@ img{
    opacity: 0.5;
    width: 100%;
    position: absolute;
-    top: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   top: 20%;
+   display: flex;
+  align-items: center;
+  text-align: center;
+    
     
 }
 
 #logo-text{
     color: white;
     font-size: 50px;
-   opacity: 0.7;
-  
+    width: 100%;
 }
 
 .background-part{
     position: relative;
     display: flex;
     height: 100vh;
-    background-color: #1e293b;
+    background: linear-gradient(#466bac,#233046) ;
     flex-direction: column; 
     width: 65vw; 
     color: white;
+    
 }
 
 .upper-background-part{
@@ -69,7 +73,9 @@ img{
 }
 .bottom-background-part{
    padding-left: 30px;
-   margin-top: 40px;
+   margin-top: 30px;
+  
+  
 }
 
 
@@ -85,26 +91,43 @@ img{
     gap: 15px;
     padding:15px 0 25px 30px ;
     color: black;
+    
  
 }
-
-
+.form-header{
+    color: #043628;
+    font-size: 19px;
+    
+}
 
 .create-account{
-    padding: 8px 38px;
-    background-color: rgb(23, 100, 119);
+    padding: 10px 43px;
+    background-color: rgb(10, 48, 58);
     color: white;
     border-radius: 8px;
-    margin-bottom: 25px;
-    border: none;
+    margin-bottom: 20px;
+    border: 1px solid rgb(1, 10, 12);
     
    
 }
-
-a{
-    text-decoration: none;
-    color: rgb(22, 148, 54);
+.create-account:hover{
+    background-color:rgb(8, 31, 37) ;
+    transform: translate(-0.5px);
+    border: none;
     
+}
+
+.have-account{
+    font-size: 12px;
+}
+
+#log-in{
+    text-decoration: none;
+    color: rgb(60, 182, 139);
+    font-weight: bold;
+}
+#log-in:hover{
+    color: rgb(131, 221, 189);
 }
 
 .form-grid{
@@ -114,12 +137,10 @@ a{
     
 }
 
-form{
+span{
     display: flex;
     flex-direction: column;
-    width: 30%;
-    
-    
+    width: 70%;
 }
 
 
@@ -127,12 +148,30 @@ form{
     display: flex;
     gap: 90px;
     font-size: 11px;
+    width: 30%;
     
 }
 input{
     padding: 3px;
+    
 }
 input:focus{
   border:2px solid rgb(92, 92, 182);
   outline: none;
+  transition: 0.5s;
+}
+
+#matching-password{
+    color: red;
+    display: none;
+}
+
+#password-length{
+    color: red;
+    display: none;
+}
+
+#correct-phone {
+    color: red;
+    display: none;
 }

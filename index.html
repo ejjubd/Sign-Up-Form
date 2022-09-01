@@ -8,13 +8,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <div class="main-container">
-    <div class="left-image">
-      <img src="./images/pexels-rahul-shah-1546027.jpg" alt="">
-      <div class="logo"> <div id="logo-text">FLEGMA</div>  </div>
+   
+ <div class="main-container">
+         <div class="left-image">
+                 <img src="./images/pexels-rahul-shah-1546027.jpg" alt="">
+                 
+                 
+         <div class="logo"> 
+                 <span id="logo-text">FLEGMA</span>  
+        </div>
     </div>
-       <div class="background-part">
-             <div class="upper-background-part">
+        <div class="background-part">
+                    <div class="upper-background-part">
                             <p class="first-paragraph">
                                          This is not a real online service! 
                                          You know you need something like this in your life to help you realize your deepest dreams. 
@@ -23,61 +28,60 @@
                              <p class="second-paragraph">
                                         You <em>know</em> you want to.
                             </p>
-             </div>
+                    </div>
 
-             <div class="form-part">
-               
-               
-                <h3>Let's do this</h3>
-               
-                <div class="form-grid">
-                    
-                    
-                    <div class="forms">
-                       <form >
-                            <label for="first-name">FIRST NAME</label> 
-                            <input type="text" name="fname" id="fname"> 
-                        </form> 
+     <form class="form-grid" action="" method=""> 
+                     <div class="form-part">
+                                 
+                                    <h3 class="form-header">Sign up here</h3>
                         
-                        <form >
-                            <label for="last-name">LAST NAME</label>  
-                            <input type="text" name="Lname" id="Lname">
-                       </form>
-                    </div>   
+                                 <div class="forms">
+                  
+                                            <span >
+                                                <label for="first-name">FIRST NAME</label> 
+                                                <input type="text" name="fname" id="fname"> 
+                                            </span> 
+                                            
+                                            <span >
+                                                 <label for="last-name">LAST NAME</label>  
+                                                 <input type="text" name="Lname" id="Lname">
+                                            </span>
+                                </div>   
                     
-                    <div class="forms">
-                        <form>
-                             <label for="email">EMAIL</label> 
-                             <input type="email" name="" id=""> 
-                         </form> 
-                         
-                         <form >
-                             <label for="phone-number">PHONE NUMBER</label>  
-                             <input type="tel" name="" id="">
-                       </form>
-                     </div>     
+                                <div class="forms">
+                                            <span>
+                                                <label for="email">EMAIL</label> 
+                                                <input type="email" name="" id=""> 
+                                            </span> 
+                                            
+                                            <span >
+                                                <label for="phone-number">PHONE NUMBER</label>  
+                                                <input type="tel" name="phone_number" id="phone_number">
+                                                <p id="correct-phone">* Enter a correct phone number</p>
+                                            </span>
+                                </div>     
 
-                     <div class="forms">
-                        <form >
-                             <label for="password">PASSWORD</label> 
-                             <input type="password" name="" id=""> 
-                         </form> 
-                         
-                         <form >
-                             <label for="confirm-password">CONFRIM PASSWORD</label>  
-                             <input type="password" name="Lname" id="Lname">
-                       </form>
-                     </div>     
-
-                     
-            </div>
-            
-        </div>              
-        <div class="bottom-background-part">
-                        <button class="create-account"> Create Account </button>
-                        <div class="have-account">Already have an account? <a href="">Log in</a> </div>
+                                <div class="forms">
+                                            <span >
+                                                <label for="password">PASSWORD</label> 
+                                                <input type="password" min="6" name="password"" id="password"> 
+                                                 <p id="matching-password">* Password do not match</p>
+                                                 <p id="password-length"> * Password must be at least 6 charachters</p>
+                                            </span> 
+                                        
+                                            <span>
+                                                <label for="confirm-password">CONFRIM PASSWORD</label>  
+                                                <input type="password" min="6" name="confirm_password" id="confirm_password">
+                                            </span>
+                                </div>     
+                     </div>              
+                    <div class="bottom-background-part">
+                                <button  type="submit" class="create-account"> Create Account </button>
+                                <div class="have-account">Already have an account? &nbsp <a id="log-in" href="">Log in</a> </div>
+                     </div>
+             </form>
         </div>
     </div>
-   </div>
+   <script src="script.js"></script>
 </body>
 </html>
