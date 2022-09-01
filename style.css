@@ -52,7 +52,7 @@ img{
     position: relative;
     display: flex;
     height: 100vh;
-    background-color: rgb(70, 99, 153);
+    background-color: #1e293b;
     flex-direction: column; 
     width: 65vw; 
     color: white;
@@ -119,6 +119,7 @@ form{
     flex-direction: column;
     width: 30%;
     
+    
 }
 
 
@@ -126,4 +127,12 @@ form{
     display: flex;
     gap: 90px;
     font-size: 11px;
+    
+}
+input{
+    padding: 3px;
+}
+input:focus{
+  border:2px solid rgb(92, 92, 182);
+  outline: none;
 }
