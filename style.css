@@ -6,16 +6,14 @@
 }
 
 body{
-    background-color: rgb(204, 196, 185); 
+    background-color: rgb(57, 116, 116); 
     font-family: 'Alumni Sans Pinstripe', sans-serif;
+   
     
 }
 
-
 .main-container{
     display: flex;
-   
-    
 }
 
 
@@ -24,38 +22,49 @@ body{
     height: 100vh;
     width: 35vw;
     display: flex;
+   
     
 }
-img{
+.big-image{
     height: 100vh;
     width: 100%;
 }
 
 .logo{
    height: 15vh;
-   background-color: black;
-   opacity: 0.5;
+   
+   
    width: 100%;
    position: absolute;
    top: 20%;
    display: flex;
-  align-items: center;
-  text-align: center;
-    
+   justify-content: center;
+  gap: 5px;
+  
+}
+
+#logo-image{
     
 }
 
-#logo-text{
+
+.logo-text{
     color: white;
-    font-size: 50px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    gap: 5px;
+   
 }
 
 .background-part{
     position: relative;
     display: flex;
     height: 100vh;
-    background: linear-gradient(#466bac,#233046) ;
+    background: linear-gradient(#261050,#1c345e) ;
     flex-direction: column; 
     width: 65vw; 
     color: white;
